@@ -52,4 +52,4 @@ Python75.zip:
 **Detectors: Detection.zip**: implementations of OOD detectors
 How to use:
 1. git clone https://github.com/IBM/Project_CodeNet.git
-2. Unzip the Detection.zip and put it to https://github.com/IBM/Project_CodeNet/tree/main/model-experiments/token-based-similarity-classification/src/
+2. Unzip the Detection.zip and put it to Project_CodeNet/tree/main/model-experiments/token-based-similarity-classification/src/
