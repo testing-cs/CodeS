@@ -1,4 +1,4 @@
-# codeS-distribution-shift-benchmark-datasets
+# CodeS-distribution-shift-benchmark-datasets
 
 All the datasets and models can be downloaded at [figshare](https://figshare.com/s/16e923c6d4d94e3559ba).
 
