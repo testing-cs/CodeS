@@ -50,6 +50,7 @@ Python75.zip:
     │   └── [DNN name]-[data name]-[distribution shift type]-oe.h5            # OE detector with a specific architecture, for a specific dataset with a certain distribution shift
 
 **Detectors: Detection.zip**: implementations of OOD detectors
+
 How to use:
 1. git clone https://github.com/IBM/Project_CodeNet.git
 2. Unzip the Detection.zip and put it to Project_CodeNet/tree/main/model-experiments/token-based-similarity-classification/src/
