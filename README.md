@@ -103,3 +103,5 @@ The raw source code files in ``Java250.zip`` and ``Python800.zip`` come from the
 We manually scrape the source code files in ``Python75.zip`` from [AtCoder](https://atcoder.jp/), a public programming contest site. 
 **!Note**: we only scrape public-facing data and respect the [Privacy Policy](https://atcoder.jp/privacy) and [Copyright](https://atcoder.jp/tos) declared by AtCoder.
 
+
+**!Note**: we include a clear license file in each *.zip for the datasets and models.
