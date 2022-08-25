@@ -1,16 +1,18 @@
 # CodeS-distribution-shift-benchmark-datasets
 
+This project is for the paper ``CodeS: A Distribution Shift Benchmark Dataset for Source Code Learning``.
+## Datasets and Models
+
 All the datasets and models can be downloaded at [figshare](https://figshare.com/s/16e923c6d4d94e3559ba).
 
 **Datasets: Python75.zip, Java250.zip, Python800.zip**
 
-Three collections of datasets: Python75, Java250-S, Python800-S. Each collection has the same structure of directories. For example:
-Python75.zip:
+Each collection of dataset has the same structure of directories. Take Python75.zip as an example:
 
 
     ├── raw                           # Raw data files scrapped from the online resources.
     │   ├── [task_name]               # Code files in each task
-    │   │   └──  [submission_id].py   # Source code file with the submission id.
+    │   │   └──  [submission_id].py   # Source code file (*.py) with the submission id.
     │   ├── csv                       # Data descriptions
     │   │   └──  [task_name].csv      # The description (e.g., Submission_id, Task_name, User) of each code file for this task
     ├── task                          # Datasets with the task distribution shift 
@@ -49,8 +51,45 @@ Python75.zip:
     ├── oe_detectors                                                          # Trained OE detectors
     │   └── [DNN name]-[data name]-[distribution shift type]-oe.h5            # OE detector with a specific architecture, for a specific dataset with a certain distribution shift
 
-**Detectors: Detection.zip**: implementations of OOD detectors
+## OOD detectors
+The implementation of 4 OOD detectors are under the directory ``Detection/``.
 
-How to use:
+```
+mspDetector.py                         # The implementation of the Maximum Softmax Probability (MSP) detector.
+odinDetector.py                        # The implementation of the Out-of-Distribution detector for neural networks (ODIN) detector.
+mahalanobisDetector.py                 # The implementation of the Mahalanobis detector.
+oeDetector.py                          # Implementation of the Outlier Exposure (OE) detector.
+``` 
+
+To obtain the AUROC of OOD detectors. Run:
+ ```
+python Detection/evaluation.py --data_name java250 --result_dir [user define] --metric random --detector odin
+ ```
+This command calculates the AUROC of the ODIN detector for the java250 dataset with random distribution shift.
+
+
+How to use the OOD detectors:
 1. git clone https://github.com/IBM/Project_CodeNet.git
-2. Unzip the Detection.zip and put it to Project_CodeNet/tree/main/model-experiments/token-based-similarity-classification/src/
+2. put the ``Detection`` directory into Project_CodeNet/tree/main/model-experiments/token-based-similarity-classification/src/
+3. run the commands to obtain the AUROC scores.
+
+## Acknowledgement
+
+We appreciate the authors, Puri et al., of the [Project CodeNet](https://github.com/IBM/Project_CodeNet) for making their datasets and code publicly available. The raw source code files in ``Java250.zip`` and ``Python800.zip`` are from CodeNet. We also tokenize source code files and build the models using the code in CodeNet.
+
+We appreciate the authors, Liang et al., of [ODIN](https://github.com/facebookresearch/odin) for making their code publicly available. We create the ``odinDetector.py`` on the top of this open source code.
+
+We appreciate the authors, Lee et al., of [Mahalanobis](https://github.com/pokaxpoka/deep_Mahalanobis_detector) for making their code publicly available. We create the ``mspDetector.py`` and ``mahalanobisDector.py`` on the top of this open source code.
+
+
+## Contact
+Feel free to contact Qiang Hu (qiang.hu@uni.lu) and Yuejun Guo (yuejun.guo@uni.lu) if you have further questions.
+
+## License
+This project is under the [MIT license](https://github.com/testing-cs/CodeS/blob/main/LICENSE).
+
+The raw source code files in ``Java250.zip`` and ``Python800.zip`` come from the [Project CodeNet](https://github.com/IBM/Project_CodeNet) under the [Apache License 2.0 license](https://github.com/IBM/Project_CodeNet/blob/main/LICENSE).
+
+We manually scrape the source code files in ``Python75.zip`` from [AtCoder](https://atcoder.jp/), a public programming contest site. 
+**!Note**: we only scrape public-facing data and respect the [Privacy Policy](https://atcoder.jp/privacy) and [Copyright](https://atcoder.jp/tos) declared by AtCoder.`
+
