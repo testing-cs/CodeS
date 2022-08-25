@@ -82,8 +82,10 @@ We appreciate the authors, Liang et al., of [ODIN](https://github.com/facebookre
 We appreciate the authors, Lee et al., of [Mahalanobis](https://github.com/pokaxpoka/deep_Mahalanobis_detector) for making their code publicly available. We create the ``mspDetector.py`` and ``mahalanobisDector.py`` on the top of this open source code.
 
 
-## Contact
-Feel free to contact Qiang Hu (qiang.hu@uni.lu) and Yuejun Guo (yuejun.guo@uni.lu) if you have further questions.
+## Support and maintenance
+Feel free to contact Qiang Hu (qiang.hu@uni.lu) and Yuejun Guo (yuejun.guo@uni.lu) if you have further questions. 
+
+This project aims to facilitate the research of distribution shift in source code understanding and we welcome your contributions! Please submit an issue or a pull request and we will try our best to respond in a timely manner. 
 
 ## License
 This project is under the [MIT license](https://github.com/testing-cs/CodeS/blob/main/LICENSE).
@@ -91,5 +93,5 @@ This project is under the [MIT license](https://github.com/testing-cs/CodeS/blob
 The raw source code files in ``Java250.zip`` and ``Python800.zip`` come from the [Project CodeNet](https://github.com/IBM/Project_CodeNet) under the [Apache License 2.0 license](https://github.com/IBM/Project_CodeNet/blob/main/LICENSE).
 
 We manually scrape the source code files in ``Python75.zip`` from [AtCoder](https://atcoder.jp/), a public programming contest site. 
-**!Note**: we only scrape public-facing data and respect the [Privacy Policy](https://atcoder.jp/privacy) and [Copyright](https://atcoder.jp/tos) declared by AtCoder.`
+**!Note**: we only scrape public-facing data and respect the [Privacy Policy](https://atcoder.jp/privacy) and [Copyright](https://atcoder.jp/tos) declared by AtCoder.
 
