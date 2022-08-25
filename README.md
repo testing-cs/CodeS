@@ -19,7 +19,7 @@ Each collection of dataset has the same structure of directories. Take ``Python7
 
 
     ├── raw                           # Raw data files scrapped from the online resources.
-    │   ├── LICENSE                   # License of using the data
+    │   ├── LICENSE.md                # License of using the data
     │   ├── [task_name]               # Code files in each task
     │   │   └──  [submission_id].py   # Source code file (*.py) with the submission id.
     │   ├── csv                       # Data descriptions
@@ -55,7 +55,8 @@ Each collection of dataset has the same structure of directories. Take ``Python7
     │   └── ...                       # The same as task structure
 
 **Models: models.zip**: trained models and OE detectors
-    |── LICENSE.md                    # License of using the models
+
+    |── LICENSE.md                                                            # License of using the models
     ├── cnns                                                                  # Trained DNNs (CNN(sequence) and MLP(Bag)) using the training and ID test sets with different distribution shifts.
     │   └── [DNN name]-[data name]-[distribution shift type].h5               # Trained DNN with a specific architecture, for a specific dataset with a certain distribution shift
     ├── oe_detectors                                                          # Trained OE detectors
