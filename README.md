@@ -5,9 +5,9 @@ This project is for the paper ``CodeS: A Distribution Shift Benchmark Dataset fo
 
 All the datasets and models can be downloaded at [figshare](https://figshare.com/s/16e923c6d4d94e3559ba).
 
-**Datasets: Python75.zip, Java250.zip, Python800.zip**
+**Datasets: ``Python75.zip``, ``Java250.zip``, ``Python800.zip``**
 
-Each collection of dataset has the same structure of directories. Take Python75.zip as an example:
+Each collection of dataset has the same structure of directories. Take ``Python75.zip`` as an example:
 
 
     ├── raw                           # Raw data files scrapped from the online resources.
@@ -63,9 +63,9 @@ oeDetector.py                          # Implementation of the Outlier Exposure 
 
 To obtain the AUROC of OOD detectors. Run:
  ```
-python Detection/evaluation.py --data_name java250 --result_dir [user define] --metric random --detector odin
+python Detection/evaluation.py --data_name java250 --result_dir [user define] --metric cst --detector odin
  ```
-This command calculates the AUROC of the ODIN detector for the java250 dataset with random distribution shift.
+This command calculates the AUROC of the ODIN detector for the java250 dataset with the cst distribution shift.
 
 
 How to use the OOD detectors:
