@@ -1,6 +1,14 @@
 # CodeS-distribution-shift-benchmark-datasets
 
 This project is for the paper ``CodeS: A Distribution Shift Benchmark Dataset for Source Code Learning``.
+
+## Dependencies
+```
+tensorflow==2.5.1
+scikit-learn==0.24.2
+numpy==1.19.5
+```
+
 ## Datasets and Models
 
 All the datasets and models can be downloaded at [figshare](https://figshare.com/s/16e923c6d4d94e3559ba).
