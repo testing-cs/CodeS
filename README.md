@@ -88,7 +88,7 @@ Feel free to contact Qiang Hu (qiang.hu@uni.lu) and Yuejun Guo (yuejun.guo@uni.l
 This project aims to facilitate the research of distribution shift in source code understanding and we welcome your contributions! Please submit an issue or a pull request and we will try our best to respond in a timely manner. 
 
 ## License
-This project is under the [MIT license](https://github.com/testing-cs/CodeS/blob/main/LICENSE).
+This project is under the [CC0 license](https://github.com/testing-cs/CodeS/blob/main/LICENSE.md).
 
 The raw source code files in ``Java250.zip`` and ``Python800.zip`` come from the [Project CodeNet](https://github.com/IBM/Project_CodeNet) under the [Apache License 2.0 license](https://github.com/IBM/Project_CodeNet/blob/main/LICENSE).
 
