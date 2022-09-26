@@ -94,7 +94,6 @@ We appreciate the authors, Lee et al., of [Mahalanobis](https://github.com/pokax
 
 
 ## Support and maintenance
-Feel free to contact Qiang Hu (qiang.hu@uni.lu) and Yuejun Guo (yuejun.guo@uni.lu) if you have further questions. 
 
 This project aims to facilitate the research of distribution shift in source code understanding and we welcome your contributions! Please submit an issue or a pull request and we will try our best to respond in a timely manner. 
 
