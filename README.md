@@ -1,6 +1,8 @@
 # CodeS-distribution-shift-benchmark-datasets
 
-This project is for the paper ``CodeS: Towards Code Model Generalization Under Distribution Shift``.
+This project is for the paper ``CodeS: Towards Code Model Generalization Under Distribution Shift``. 
+
+Please check our [project site](https://sites.google.com/view/codes-distribution-shift) for more details.
 
 ## Dependencies
 ```
