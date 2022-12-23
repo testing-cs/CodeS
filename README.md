@@ -109,3 +109,8 @@ We manually scrape the source code files in ``Python75.zip`` from [AtCoder](http
 
 
 **!Note**: we include a clear license file in each *.zip for the datasets and models.
+
+If you use this project, please consider citing us:
+<pre><code>
+
+</code></pre>
