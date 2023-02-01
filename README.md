@@ -112,5 +112,10 @@ We manually scrape the source code files in ``Python75.zip`` from [AtCoder](http
 
 If you use this project, please consider citing us:
 <pre><code>
-
+@inproceedings{codes2023,
+  author = {Hu, Qiang and Guo, Yuejun and Xie, Xiaofei and Cordy, Maxime and Ma, Lei and Papadakis, Mike and Traon, Yves Le},
+  title = {CodeS: Towards Code Model Generalization Under Distribution Shift},
+  year = {2023},
+  booktitle = {IEEE/ACM 45nd International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER)}
+}
 </code></pre>
